@@ -1,0 +1,7 @@
+.input-box{
+    border-radius: 8px;
+}
+.div-form{
+    display: flex;
+    align-items: space-between;
+}

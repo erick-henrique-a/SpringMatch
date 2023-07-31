@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="PT-BR"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista De filmes</title>
+    <link rel= "stylesheet" href="../../static/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Lista de filmes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>NOME</th>
+                <th>DURAÇÃO</th>
+                <th>ANO DE LANÇAMENTO</th>
+                <th>GENÊRO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="filme : ${lista}">
+                <td th:text="${filme.nome}"></td>
+                <td th:text="${filme.duracao}"></td>
+                <td th:text="${filme.ano}"></td>
+                <td th:text="${filme.genero}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
